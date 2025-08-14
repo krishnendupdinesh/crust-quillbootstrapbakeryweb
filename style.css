@@ -1,0 +1,101 @@
+#home{
+    width: 100%;
+    height: 100vh;
+    background: url(./images/home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home h1{
+    text-align: center;
+    color: azure;
+    font-size: 80px;
+    
+}
+#menu{
+     width: 100%;
+    height: 100vh;
+    margin-top: 35px;
+}
+.cards-wraper {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    flex-wrap: nowrap; 
+    margin-top: 25px;
+}
+
+.cards-wraper .card {
+    flex: 0 0 calc(100% / 3 - 20px); 
+    max-width: calc(100% / 3 - 20px);
+    margin-top: 40px;
+}
+#featured {
+    width: 100%;
+    height: 100vh;
+    background: url(./images/home.png) no-repeat center center;
+    background-size: cover; 
+    position: relative;
+}
+
+#featured::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); 
+    z-index: 0;
+}
+
+#featured > * {
+    position: relative;
+    z-index: 1;
+}
+#contact{
+    width: 100%;
+    height: 100vh;
+    margin-top: 20px;
+}
+#contactcontent {
+   text-align: center; 
+   margin-top: 20%;
+}
+#contactimg{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 0%;
+}
+#footer {
+    margin-top: 60px;
+    background: url(./images/home.png) no-repeat center center;
+    background-size: cover; 
+    position: relative;
+}
+
+#footer::before {
+    content: "";
+    position: absolute;
+    inset: 0; 
+    background: rgba(255, 255, 255, 0.6); 
+    z-index: 0;
+}
+
+#footer * {
+    position: relative;
+    z-index: 1;
+}
+
+#card2 {
+    flex: 0 0 calc(100% / 2 - 20px); 
+    max-width: calc(100% / 2 - 20px);
+    margin-top: 40px;
+}
+
+#card2 .row {
+    height: 100%;
+    align-items: stretch;
+}

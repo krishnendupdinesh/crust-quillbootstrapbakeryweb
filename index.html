@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-1" href="#">Crust & Quill</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#featured">Featured</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#ourstory">Our Story</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+                    <a href="#" class="nav-link nav-icon"><i class="bi bi-cart3 w-20"></i></a>
+                </div>
+            </div>
+        </nav>
+        <!-- home -->
+        <div id="home">
+            <h1>Freshly <br> Baked , Just For You .</h1>
+            <!-- <span>Where every loaf tells a story.</span> -->
+        </div>
+        <!-- menu -->
+        <div id="menu">
+            <div id="carouselExample" class="carousel slide carousel-dark slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cards-wraper">
+
+                            <div class="card">
+                                <img src="./images/card1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Baguette</h5>
+                                    <p class="card-text">A classic French long loaf with a crisp crust and soft
+                                        interior.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Add to Cart </a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./images/2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Brioche</h5>
+                                    <p class="card-text">Buttery, slightly sweet bread with a tender crumb.</p>
+                                    <a href="#" class="btn btn-primary">Add to Cart </a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./images/4.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sourdough</h5>
+                                    <p class="card-text">Naturally leavened bread with a tangy flavor and chewy texture.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Add to Cart </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wraper">
+
+                            <div class="card">
+                                <img src="./images/5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Focaccia</h5>
+                                    <p class="card-text"> Italian flatbread topped with olive oil, herbs, and sometimes
+                                        veggies.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Add to Cart </a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./images/6.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ciabatta </h5>
+                                    <p class="card-text">Rustic Italian bread with an airy texture and chewy crust.</p>
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./images/7.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rye Bread</h5>
+                                    <p class="card-text">Dense, earthy bread made with rye flour, perfect for hearty
+                                        sandwiches.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wraper">
+
+                            <div class="card">
+                                <img src="./images/8.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Multigrain Bread</h5>
+                                    <p class="card-text">A wholesome loaf packed with a variety of grains and seeds.</p>
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./images/9.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Challah</h5>
+                                    <p class="card-text">Soft, braided bread traditionally served on Jewish holidays.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./images/10.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pita </h5>
+                                    <p class="card-text">Soft, round flatbread with a pocket inside for stuffing.</p>
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wraper">
+
+                            <div class="card">
+                                <img src="./images/11.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Naan</h5>
+                                    <p class="card-text">Fluffy Indian bread baked in a tandoor, often brushed with
+                                        butter.
+
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./images/12.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bagel</h5>
+                                    <p class="card-text">Chewy, ring-shaped bread often topped with seeds or seasoning.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./images/13.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Whole Wheat Bread</h5>
+                                    <p class="card-text">Nutritious bread made entirely from whole wheat flour.</p>
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- featured -->
+        <div id="featured">
+            <div class="mt-5 text-center container-fluid">
+                <h1 class="mt-5 pt-5 extra-top-space text-dark" style="margin-top: 6rem;">Baker’s Picks</h1>
+                <p class="mt-5 text-dark">In the warm glow of our ovens, each loaf begins as a humble handful of flour,
+                    kissed by
+                    nature’s finest gifts. The Lemon Blueberry Loaf hums with the brightness of summer mornings, while
+                    the Herbed Chickpea Bruschetta whispers of rustic countryside tables. At Crust & Quill, every bake
+                    is a page turned in our story — a story of care, craft, and timeless flavor, meant to be savored
+                    slowly, with heart and with company.</p>
+            </div>
+            <div class="cards-wraper">
+                <div class="card mb-3" id="card2">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./images/f1 (1).png" class="img-fluid rounded-start h-100 object-fit-cover"
+                                alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Herbed Chickpea Bruschetta</h5>
+                                <p class="card-text lh-base">Crispy toasted bread topped with creamy chickpeas, fresh
+                                    herbs,
+                                    and a drizzle of olive oil — a fresh, wholesome bite with Mediterranean charm.</p>
+                                <p class="card-text mt-5 pt-5"><small class="text-body-secondary">Toasted bread,
+                                        chickpeas,
+                                        fresh herbs, garlic, olive oil, Pepper, lemon juice.</small></p>
+                                <a href=""><i class="bi bi-fork-knife text-secondary"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3" id="card2">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./images/f1 (2).png" class="img-fluid rounded-start h-100 object-fit-cover"
+                                alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Lemon Blueberry Loaf</h5>
+                                <p class="card-text lh-base">A moist and zesty loaf bursting with tangy lemon and sweet,
+                                    juicy blueberries — perfect for a sunny morning or a cozy afternoon tea.</p>
+                                <p class="card-text mt-5 pt-5"><small class="text-body-secondary ">Fresh blueberries,
+                                        zesty
+                                        lemon, flour, sugar, eggs, butter, baking powder.</small></p>
+                                <a href=""><i class="bi bi-fork-knife text-secondary"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- our story -->
+        <div id="ourstory" class="container-fluid py-5">
+            <div class="container text-center">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-md-6">
+                        <img class="storyimg img-fluid" src="./images/ourstory.png" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column justify-content-center" id="story">
+                        <h1 class="mb-4">Loaves & Letters</h1>
+                        <p>Freshly Baked, Just for You isn’t just a promise-it’s our way of bringing warmth to your day.
+                            At Crust & Quill, every loaf, tart, and pastry is crafted with care, using time-honored
+                            recipes passed down through generations. The golden crust, the rich aroma, the delicate
+                            crumb-each bite tells a story of patience, skill, and love for the art of baking. <br><br>
+
+                            From the crackle of freshly baked bread to the melt-in-your-mouth sweetness of our pastries,
+                            we make every creation as if it were meant for a dear friend. Whether you’re stopping by for
+                            a quick treat or planning a special occasion, our bakes are always made in small batches,
+                            ensuring that what you enjoy is truly fresh, personal, and unforgettable-just for you.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- contact -->
+        <div id="contact" class="container-fluid ">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col column-flex justify-content-center" id="contactcontent">
+                        <h1>Visit and Contact</h1>
+                        <p>Open Mon-Sat 8am to 7pm</p>
+                        <p>Crust & Quill Bakery <br> 42, Willow Lane, Fort Kochi, Kerala</p>
+                        <p><i class="bi bi-telephone pe-2"></i>+91 9867542341 <br>
+                            <i class="bi bi-envelope pe-2"></i>crustandquill@gmail.com
+                        </p>
+
+
+                    </div>
+                    <div class="col ">
+
+                        <img id="contactimg" class="storyimg img-fluid h-75" src="./images/cimg.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+        <!-- footer -->
+
+        <div id="footer">
+            <footer class="py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-lg-4">
+                            <h3>Crust&Quill</h3>
+                            <p>42, Willow Lane, Fort Kochi, Kerala</p>
+                            <p>+91 9867542341</p>
+                            <p class="mb-0">crustandquill@gmail.com</p>
+                        </div>
+                        <div class="col">
+                            <h4>About</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none text-dark">Our Story</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Meet the Bakers</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Careers</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h4>Customer Service</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none text-dark">Contact Us</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">FAQ</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Shipping & Delivery</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Return Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h4>Legal</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none text-dark">Terms & Conditions</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Privacy Policy</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Cookie Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-lg-3 me-lg-3">
+                            <h4>Connect</h4>
+                            <div>
+                                <a href="#" class="text-decoration-none text-dark"><i
+                                        class="bi bi-instagram fs-2 me-3"></i></a>
+                                <a href="#" class="text-decoration-none text-dark"><i
+                                        class="bi bi-facebook fs-2 me-3"></i></a>
+                                <a href="#" class="text-decoration-none text-dark"><i
+                                        class="bi bi-envelope fs-2 "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>2025 &copy; Crust&Quill . All Rights Reserved</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
