@@ -1,29 +1,32 @@
-#home{
+#home {
     width: 100%;
     height: 100vh;
-    background: url(./images/home.png);
-    background-repeat: no-repeat;
+    background: url(./images/home.png) no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
-#home h1{
+
+#home h1 {
     text-align: center;
     color: azure;
     font-size: 80px;
-    
 }
-#menu{
-     width: 100%;
-    height: 100vh;
+
+/* Menu Section */
+#menu {
+    width: 100%;
+    min-height: 100vh;
     margin-top: 35px;
 }
+
 .cards-wraper {
     display: flex;
     justify-content: center; 
     gap: 20px;
-    flex-wrap: nowrap; 
+    flex-wrap: wrap;
     margin-top: 25px;
 }
 
@@ -32,9 +35,11 @@
     max-width: calc(100% / 3 - 20px);
     margin-top: 40px;
 }
+
+/* Featured Section */
 #featured {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: url(./images/home.png) no-repeat center center;
     background-size: cover; 
     position: relative;
@@ -43,10 +48,7 @@
 #featured::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: rgba(255, 255, 255, 0.6); 
     z-index: 0;
 }
@@ -55,25 +57,33 @@
     position: relative;
     z-index: 1;
 }
-#contact{
+
+/* Contact Section */
+#contact {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     margin-top: 20px;
+    padding: 20px;
 }
+
 #contactcontent {
-   text-align: center; 
-   margin-top: 20%;
+    text-align: center; 
+    margin-top: 20%;
 }
-#contactimg{
+
+#contactimg {
     width: 100%;
-    height: fit-content;
+    height: auto;
     margin-bottom: 0%;
 }
+
+/* Footer */
 #footer {
     margin-top: 60px;
     background: url(./images/home.png) no-repeat center center;
     background-size: cover; 
     position: relative;
+    padding: 20px;
 }
 
 #footer::before {
@@ -89,6 +99,7 @@
     z-index: 1;
 }
 
+/* Card2 */
 #card2 {
     flex: 0 0 calc(100% / 2 - 20px); 
     max-width: calc(100% / 2 - 20px);
@@ -98,4 +109,49 @@
 #card2 .row {
     height: 100%;
     align-items: stretch;
+}
+
+/* -------------------
+Responsive Breakpoints
+-------------------- */
+@media (max-width: 992px) {
+    #home h1 {
+        font-size: 55px;
+    }
+
+    /* Cards: from 3 → 1 directly */
+    .cards-wraper .card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Card2 also full width */
+    #card2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 42px;
+        padding: 0 10px;
+    }
+
+    #contactcontent {
+        margin-top: 15%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #home h1 {
+        font-size: 30px;
+    }
+
+    #contactcontent {
+        margin-top: 10%;
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
 }
